@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Sann's Craft | E-Commerce</title>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="admin.css">
+        <link rel="stylesheet" href="admin1.css">
+        <link rel="stylesheet" href="account.css">
+
+
+
+    </head>
+    <body>
+        
+
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+            <div class="sidebar-brand"> 
+                <h1><span class=""></span> <span>Sann's Craft</span> 
+                </h1>
+            </div>
+
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.php"class="active"><span class="las la-igloo"></span>
+                            <span>Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href="customer.php"><span class="las la-users"></span>
+                            <span>Customers</span></a>
+                    </li>
+                    <li>
+                        <a href="orders.php"><span class="las la-book"></span>
+                            <span>Orders</span></a>
+                    </li>
+                    <li>
+                        <a href="product.php"><span class="las la-shopping-bag"></span>
+                            <span>Product</span></a>
+                    </li>
+                    <li>
+                        <a href="accounts.php"><span class="las la-user-circle"></span>
+                            <span>Accounts</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h2>
+                    <label for="nav-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    Dashboard
+                </h2>
+
+                <form class="search-form" action="search.php" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+    
+               <div class="header-actions">
+            <div class="account-container">
+              <button class="account-icon">
+                <img src="image/account.png" alt="Account Icon">
+                <p>Me</p>
+                </div>
+              </button>
+            </div>
+            </header>
+
+            <main>
+                <div class="cards">
+                    <div class="card-single">
+                        <div>
+                            <h1>54</h1>
+                            <a href="customer.html"><span>Customers</span></a>
+                        </div>
+                        <div>
+                            <h2><span class="las la-users"></span></h2>
+                        </div>
+                    </div>
+
+                    <div class="card-single">
+                        <link rel="stylesheet" href="">
+                        <div>
+                            <h1>79</h1>
+                            <a href="inventory.html"><span>Inventory</span></a>
+                        </div>
+                        <div>
+                            <h2><span class="las la-clipboard-list"></span></h2>
+                        </div>
+                    </div>
+
+                    <div class="card-single">
+                        <div>
+                            <h1>124</h1>
+                            <a href="orders.html"><span>Orders</span></a>
+                        </div>
+                        <div>
+                            <h2><span class="las la-shopping-bag"></span></h2>
+                        </div>
+                    </div>
+
+                    <div class="card-single">
+                        <div>
+                            <h1>₱35 000.00</h1>
+                            <span>Income</span>
+                        </div>
+                        <div>
+                            <h2><span class="lab la-google-wallet"></span> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-grid">
+                    <div class="Projects">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Recent Order</h3>
+
+                                <a href="orders.html"><button>See all <span class="las la-arrow-right"></span></button></a>
+                            </div>
+
+                            <div class="card-body">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Product Name</td>
+                                            <td>Product Number</td>
+                                            <td>Payment</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Anklet</td>
+                                            <td>1000</td>
+                                            <td>Due</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                Pending Details
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bracelet</td>
+                                            <td>1500</td>
+                                            <td>Due</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                Pending Details
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keychain</td>
+                                            <td>2000</td>
+                                            <td>Due</td>
+                                            <td>
+                                                <span class="status orange"></span>
+                                                Pending Details
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Necklace</td>
+                                            <td>2500</td>
+                                            <td>Due</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                Pending Details
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="card-body">
+                                    <div class="table-resposive"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
