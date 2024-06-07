@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Sann's Craft | E-Commerce</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <style>
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        .products-table thead {
+            background-color: var(--main-color);
+            color: white;
+        }
+
+        .products-table th, .products-table td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .products-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .products-table tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        .products-table .status {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .products-table .status.available {
+            background-color: green;
+        }
+
+        .products-table .status.unavailable {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle">
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h2><span class="lab la-accusoft"></span> <span>ShallaShop</span></h2>
+    </div>
+
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="admin.html"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="customer.html"><span class="las la-users"></span>
+                    <span>Customers</span></a>
+            </li>
+            <li>
+                <a href="orders.html"><span class="las la-shopping-bag"></span>
+                    <span>Orders</span></a>
+            </li>
+            <li>
+                <a href="product.html" class="active"><span class="las la-box"></span>
+                    <span>Products</span></a>
+            </li>
+            <li>
+                <a href="inventory.html"><span class="las la-receipt"></span>
+                    <span>Inventory</span></a>
+            </li>
+            <li>
+                <a href="accounts.html"><span class="las la-user-circle"></span>
+                    <span>Accounts</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content">
+    <header>
+        <h2>
+            <label for="nav-toggle">
+                <span class="las la-bars"></span>
+            </label>
+            Products
+        </h2>
+
+        <div class="search-wrapper">
+            <span class="las la-search"></span>
+            <input type="search" placeholder="Search here" />
+        </div>
+
+        <div class="user-wrapper">
+            <img src="img/me.jpg" width="40px" height="40px" alt="Profile Image">
+        </div>
+    </header>
+
+    <main>
+        <h3>Products Details</h3>
+        <table class="products-table">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>201</td>
+                    <td>Product X</td>
+                    <td>Category A</td>
+                    <td>$25.00</td>
+                    <td><span class="status available"></span> Available</td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>Product Y</td>
+                    <td>Category B</td>
+                    <td>$30.00</td>
+                    <td><span class="status unavailable"></span> Unavailable</td>
+                </tr>
+                <tr>
+                    <td>203</td>
+                    <td>Product Z</td>
+                    <td>Category A</td>
+                    <td>$15.00</td>
+                    <td><span class="status available"></span> Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>
+
+</body>
+</html>
